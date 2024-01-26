@@ -5,7 +5,7 @@ def max_value_node(node):
     current = node
     while current.right:
         current = current.right
-    return current
+    return current.val
 
 
 if __name__ == "__main__":
@@ -17,5 +17,5 @@ if __name__ == "__main__":
     root = insert(root, 6)
     root = insert(root, 8)
 
-    max_value = max_value_node(root).val
+    max_value = max_value_node(root)
     print(f"Max value: {max_value}")

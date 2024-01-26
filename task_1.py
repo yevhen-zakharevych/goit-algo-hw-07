@@ -5,7 +5,7 @@ def min_value_node(node):
     current = node
     while current.left:
         current = current.left
-    return current
+    return current.val
 
 
 if __name__ == "__main__":
@@ -17,5 +17,5 @@ if __name__ == "__main__":
     root = insert(root, 6)
     root = insert(root, 8)
 
-    min_value = min_value_node(root).val;
+    min_value = min_value_node(root);
     print(f"Min value: {min_value}")
